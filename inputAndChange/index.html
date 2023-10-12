@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>OnInput - Example</h1>
+    <p>Hello, my name is <span id="name"> </span></p>
+    <input type="text" name="name" placeholder="Your name here" oninput="setName(this)">
+
+<h1>onSelect - Example</h1>
+<select name="food" id="food" onchange="pickFood(this)">
+    <option value="tacos">tacos</option>
+    <option value="pizza" selected>pizza</option>
+    <option value="burritos">burritos</option>
+    <option value="pasta">pasta</option>
+</select>
+<button onclick="order()">Order Food</button>
+
+</body>
+<script src="script.js"></script>
+</html>
